@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150209 22:15:37.030" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
+<suite source="D:\at\test_form" id="s1" name="Test Form">
+<suite source="D:\at\test_form\valid_form.txt" id="s1-s1" name="Valid Form">
+<test id="s1-s1-t1" name="Valid Form">
+<kw type="kw" name="resource.Open Browser To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${FORM URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150209 22:15:37.241" level="INFO">Opening browser 'Firefox' to base url 'https://docs.google.com/forms/d/1xTv3VIzZyFlhekgIEjT43fIR0U3vNK1OGgF3j_ny1sM/viewform'</msg>
+<status status="PASS" endtime="20150209 22:15:42.055" starttime="20150209 22:15:37.241"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150209 22:15:42.125" starttime="20150209 22:15:42.055"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Selenium Speed">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20150209 22:15:42.125" starttime="20150209 22:15:42.125"></status>
+</kw>
+<kw type="kw" name="resource.Form Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Form Title</arg>
+</arguments>
+<msg timestamp="20150209 22:15:42.145" level="INFO">Page title is 'Form Title'.</msg>
+<status status="PASS" endtime="20150209 22:15:42.145" starttime="20150209 22:15:42.125"></status>
+</kw>
+<status status="PASS" endtime="20150209 22:15:42.145" starttime="20150209 22:15:42.125"></status>
+</kw>
+<status status="PASS" endtime="20150209 22:15:42.145" starttime="20150209 22:15:37.241"></status>
+</kw>
+<kw type="kw" name="resource.Input Name">
+<doc></doc>
+<arguments>
+<arg>Pakorn</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>entry.1978186045</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20150209 22:15:42.145" level="INFO">Typing text 'Pakorn' into text field 'entry.1978186045'</msg>
+<status status="PASS" endtime="20150209 22:15:42.285" starttime="20150209 22:15:42.145"></status>
+</kw>
+<status status="PASS" endtime="20150209 22:15:42.285" starttime="20150209 22:15:42.145"></status>
+</kw>
+<kw type="kw" name="resource.Input Address">
+<doc></doc>
+<arguments>
+<arg>Address</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>entry.2139123510</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20150209 22:15:42.285" level="INFO">Typing text 'Address' into text field 'entry.2139123510'</msg>
+<status status="PASS" endtime="20150209 22:15:42.375" starttime="20150209 22:15:42.285"></status>
+</kw>
+<status status="PASS" endtime="20150209 22:15:42.375" starttime="20150209 22:15:42.285"></status>
+</kw>
+<kw type="kw" name="resource.Input Checkbox">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Select Checkbox">
+<doc>Selects checkbox identified by `locator`.</doc>
+<arguments>
+<arg>entry.1913898819</arg>
+</arguments>
+<msg timestamp="20150209 22:15:42.375" level="INFO">Selecting checkbox 'entry.1913898819'.</msg>
+<status status="PASS" endtime="20150209 22:15:42.535" starttime="20150209 22:15:42.375"></status>
+</kw>
+<status status="PASS" endtime="20150209 22:15:42.535" starttime="20150209 22:15:42.375"></status>
+</kw>
+<kw type="kw" name="resource.Input Radio">
+<doc></doc>
+<arguments>
+<arg>Male</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Select Radio Button">
+<doc>Sets selection of radio button group identified by `group_name` to `value`.</doc>
+<arguments>
+<arg>entry.1518003300</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20150209 22:15:42.535" level="INFO">Selecting 'Male' from radio button 'entry.1518003300'.</msg>
+<status status="PASS" endtime="20150209 22:15:42.665" starttime="20150209 22:15:42.535"></status>
+</kw>
+<status status="PASS" endtime="20150209 22:15:42.665" starttime="20150209 22:15:42.535"></status>
+</kw>
+<kw type="kw" name="resource.Input Dropdowm">
+<doc></doc>
+<arguments>
+<arg>Japan</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Select From List">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>entry.2384352</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20150209 22:15:42.675" level="INFO">Selecting option(s) 'Japan' from list 'entry.2384352'.</msg>
+<status status="PASS" endtime="20150209 22:15:42.895" starttime="20150209 22:15:42.675"></status>
+</kw>
+<status status="PASS" endtime="20150209 22:15:42.895" starttime="20150209 22:15:42.665"></status>
+</kw>
+<kw type="kw" name="resource.Submit Form">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>submit</arg>
+</arguments>
+<msg timestamp="20150209 22:15:42.895" level="INFO">Clicking button 'submit'.</msg>
+<status status="PASS" endtime="20150209 22:15:43.648" starttime="20150209 22:15:42.895"></status>
+</kw>
+<status status="PASS" endtime="20150209 22:15:43.658" starttime="20150209 22:15:42.895"></status>
+</kw>
+<kw type="kw" name="resource.Thankyou Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>ขอขอบคุณ!</arg>
+</arguments>
+<msg timestamp="20150209 22:15:43.698" level="INFO">Page title is 'ขอขอบคุณ!'.</msg>
+<status status="PASS" endtime="20150209 22:15:43.698" starttime="20150209 22:15:43.658"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Location Should Be">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${THANKS URL}</arg>
+</arguments>
+<msg timestamp="20150209 22:15:43.708" level="INFO">Current location is 'https://docs.google.com/forms/d/1xTv3VIzZyFlhekgIEjT43fIR0U3vNK1OGgF3j_ny1sM/formResponse'.</msg>
+<status status="PASS" endtime="20150209 22:15:43.708" starttime="20150209 22:15:43.698"></status>
+</kw>
+<status status="PASS" endtime="20150209 22:15:43.708" starttime="20150209 22:15:43.658"></status>
+</kw>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150209 22:15:43.788" starttime="20150209 22:15:43.708"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20150209 22:15:43.788" critical="yes" starttime="20150209 22:15:37.241"></status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20150209 22:15:43.798" starttime="20150209 22:15:37.060"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20150209 22:15:43.798" starttime="20150209 22:15:37.030"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="1" id="s1" name="Test Form">Test Form</stat>
+<stat fail="0" pass="1" id="s1-s1" name="Valid Form">Test Form.Valid Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
