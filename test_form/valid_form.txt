@@ -15,4 +15,6 @@ Valid Form
     Input Dropdowm	Japan
     Submit Form
     Thankyou Page Should Be Open
+    Click Link		xpath=/html/body/div/div/div[2]/div[2]/a
+    Form Page Should Be Open
     [Teardown]    Close Browser
