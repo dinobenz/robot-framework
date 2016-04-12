@@ -1,0 +1,28 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Variables ***
+${EMS NO}        EQ123456789TH
+
+*** Test Cases ***
+Check EMS Status
+	# เปิด web browser firefox
+    Open Browser    http://track.thailandpost.co.th/tracking/default.aspx    firefox
+
+    # ตั้งค่าการดีเลย์ให้ทำงายช้าลง
+    Set Selenium Speed    1
+
+    # กรอกรหัส ems
+    Input Text    TextBarcode    ${EMS NO}
+
+    # สั้งเลื่อน slider ไปทางขวาสุด
+    Execute JavaScript 	$('.Slider.ui-draggable').css('left', '138px');
+
+    # ตรวจสอบ capcha และ สั่ง submit form จาก element ที่ถูกซ่อนไว้
+    Execute JavaScript 	$.post('http://track.thailandpost.co.th/tracking/server.aspx',{action : 'qaptcha',qaptcha_key : '-5wf_YkEUU_3v_FccS2FvDdu66jPDsUt'},function(data) {if(!data.error){$('#CaptchaCTL1_submit').trigger('click');}},'json');
+
+    # ตรวจสอบผลการค้นหาตามรหัส ems
+    Element Should Contain 	Panel1	${EMS NO}
+
+    # ปิด web browser เมื่อจบการทดสอบ
+    [Teardown]    Close Browser
