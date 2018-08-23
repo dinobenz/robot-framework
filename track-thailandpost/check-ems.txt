@@ -7,7 +7,7 @@ ${EMS NO}        EQ123456789TH
 *** Test Cases ***
 Check EMS Status
 	# เปิด web browser firefox
-    Open Browser    http://track.thailandpost.co.th/tracking/default.aspx    firefox
+    Open Browser    http://track.thailandpost.co.th/tracking/default.aspx    ie
 
     # ตั้งค่าการดีเลย์ให้ทำงายช้าลง
     Set Selenium Speed    1
