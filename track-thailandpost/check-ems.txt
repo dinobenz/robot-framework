@@ -2,15 +2,18 @@
 Library           Selenium2Library
 
 *** Variables ***
-${EMS NO}        EQ123456789TH
+${WEB DRIVER}           chrome
+${SPEED}                1
+${POST TRACKING URL}    http://track.thailandpost.co.th/tracking/default.aspx
+${EMS NO}               EV695795662TH
 
 *** Test Cases ***
 Check EMS Status
 	# เปิด web browser firefox
-    Open Browser    http://track.thailandpost.co.th/tracking/default.aspx    ie
+    Open Browser    ${POST TRACKING URL}    ${WEB DRIVER}
 
     # ตั้งค่าการดีเลย์ให้ทำงายช้าลง
-    Set Selenium Speed    1
+    Set Selenium Speed    ${SPEED}
 
     # กรอกรหัส ems
     Input Text    TextBarcode    ${EMS NO}
